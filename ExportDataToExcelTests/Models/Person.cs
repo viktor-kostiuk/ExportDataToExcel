@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ExportDataToExcel.Models
+namespace ExportDataToExcelTests.Models
 {
    public class Person
     {
