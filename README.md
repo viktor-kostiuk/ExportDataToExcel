@@ -4,6 +4,7 @@ Provide a way to export data to Excel
 Usage samples
 
 Export to file
+
 <code>
   Person[] persons = new[]
   {
@@ -26,6 +27,7 @@ Export to file
 </code>
 
 With custom properties
+
 <code>
   //Prepare data
   Person[] persons = new[]
