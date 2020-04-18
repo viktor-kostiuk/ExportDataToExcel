@@ -4,7 +4,7 @@ Provide a way to export data to Excel
 Usage samples
 
 Export to file
-
+<pre>
 <code>
   Person[] persons = new[]
   {
@@ -25,9 +25,10 @@ Export to file
   NpoiExcelDataExporter exporter = new NpoiExcelDataExporter();
   exporter.ExportToFile(persons, @"D:\Sample.xlsx");
 </code>
+</pre>
 
 With custom properties
-
+<pre>
 <code>
   //Prepare data
   Person[] persons = new[]
@@ -71,3 +72,4 @@ With custom properties
       exporter.ExportToStream(sheets, stream);
   }
 </code>
+</pre>
