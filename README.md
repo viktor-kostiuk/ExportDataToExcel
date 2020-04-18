@@ -1,7 +1,7 @@
 # ExportDataToExcel
 Provide a way to export data to Excel
 
-Usage samples
+<a href="https://pronetcs.blogspot.com/2020/04/export-data-to-excelin-c-hello.html">Check out article with description of exporter :-)</a>
 
 Export to file
 <pre>
