@@ -6,7 +6,7 @@ Provide a way to export data to Excel
 Export to file
 <pre>
 <code>
-  Person[] persons = new[]
+  Person[] people = new[]
   {
       new Person
       {
@@ -23,7 +23,7 @@ Export to file
   };
 
   NpoiExcelDataExporter exporter = new NpoiExcelDataExporter();
-  exporter.ExportToFile(persons, @"D:\Sample.xlsx");
+  exporter.ExportToFile(people, @"D:\Sample.xlsx");
 </code>
 </pre>
 
@@ -31,7 +31,7 @@ With custom properties
 <pre>
 <code>
   //Prepare data
-  Person[] persons = new[]
+  Person[] people = new[]
   {
       new Person
       {
@@ -58,13 +58,13 @@ With custom properties
       .HasProvider(x => x.DateOfBirth?.ToString("MMMM dd"));
 
   //Export
-  ExportSheetInfo personsSheet = new ExportSheetInfo
+  ExportSheetInfo peopleSheet = new ExportSheetInfo
   {
-      Header = "Persons",
-      Items = persons,
+      Header = "People",
+      Items = people,
       Metadata = personMetadataBuilder.Metadata
   };
-  ExportSheetInfo[] sheets = new[] { personsSheet };
+  ExportSheetInfo[] sheets = new[] { peopleSheet };
 
   NpoiExcelDataExporter exporter = new NpoiExcelDataExporter();
   using (MemoryStream stream = new MemoryStream())
